@@ -1,7 +1,6 @@
 function change() {
   let inp = document.getElementById("pass").value;
   let err1 = document.getElementById("err1");
-
   let inp1 = document.getElementById("confirmpass").value;
   let err2 = document.getElementById("err2");
 
