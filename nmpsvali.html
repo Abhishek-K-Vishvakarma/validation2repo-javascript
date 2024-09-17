@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Input Validation</title>
+</head>
+<body>
+  <label>Choose City:</label>
+  <select onchange="FunName()" id="city">
+    <option value="0">Select City</option>
+    <option>Varanasi</option>
+    <option>Kanpur</option>
+    <option>Lucknow</option>
+    <option>Singapour</option>
+  </select>
+  <input type="text" id="name">
+  <span id="err1"></span>
+  <br /><br />
+  <label>Enter Your Name</label>
+  <input type="text" id="pass"><span id="err2"></span><br /><br />
+  <button onclick="FunName()">Validation on</button>
+  <script src="vali.js"></script>
+</body>
+</html>
