@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <title>Form Validation</title>
+  <style>
+    #inp1,
+    #inp2 {
+      width: 20rem;
+    }
+
+    label {
+      margin-left: 20px;
+      font-size: 20px;
+      color: yellow;
+      text-shadow: 2px 2px 5px red;
+    }
+
+    body {
+      background-image: url('https://png.pngtree.com/background/20230412/original/pngtree-nature-forest-sun-ecology-picture-image_2394782.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center/cover;
+    }
+
+    #close {
+      margin-left: 20rem;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="alert-box" id="alertBox">
+    <div class="container mt-5  card"
+      style="width: 35rem;box-shadow: 0px 0px 5px 2px #535353; background-color: rgb(126, 181, 184);">
+      <h2 style="text-align: center; text-shadow: 3px 3px 4.5px blue; color: yellow;">Form Validation</h2>
+      <form id="myform">
+        <label for="inp1"> Enter Name:
+          <input type="text" id="inp1" name="inp1" placeholder="Enter Name:" />
+          <div id="em1" style="color: red;"></div>
+        </label>
+
+        <br /><br /><br />
+
+        <label for="inp2">Email Input:
+          <input type="text" id="inp2" name="inp2" placeholder="Enter Mail" />
+          <div id="em2" style="color: red;"></div>
+        </label>
+
+        <br /><br />
+
+        <label for="check">Agree to terms:
+          <input type="checkbox" id="check" />
+          <div id="em3" style="color: red;"></div>
+          <br />
+          Choose Language:
+        </label>
+
+        <br /><br />
+
+        <label>
+          HTML:
+          <input type="checkbox" id="c1">
+          <span id="err1" style="color: red;"></span>
+        </label><br /><br />
+
+        <label>
+          CSS:
+          <input type="checkbox" id="c2">
+          <span id="err2" style="color: red;"></span>
+        </label>
+        <br /><br />
+        <label>
+          JavaScript:
+          <input type="checkbox" id="c3">
+          <span id="err3" style="color: red;"></span>
+          <br /><br />
+          Choose Gender one only:
+        </label>
+
+        <br /><br />
+        <label>
+          Girl:
+          <input type="radio" id="r1" name="gender">
+          <span id="rerr1" style="color: red;"></span>
+        </label>
+        <br />
+        <br />
+        <label>
+          Boy:
+          <input type="radio" id="r2" name="gender">
+          <span id="rerr2" style="color: red;"></span>
+        </label>
+        <br /><br />
+        <label>
+          Adult:
+          <input type="radio" id="r3" name="gender">
+          <span id="rerr3" style="color: red;"></span>
+        </label>
+
+        <br /><br />
+        <button type="submit" id="submit-btn" class="btn btn-success mt-3">Submit</button>
+        <button type="reset" class="btn btn-danger mt-3">Reset</button>
+        <button type="button" class="btn-close" aria-label="Close" id="close"></button>
+      </form>
+    </div>
+  </div>
+  <script src="FormValidation.js"></script>
+</body>
+
+</html>
